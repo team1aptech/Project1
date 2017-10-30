@@ -9,13 +9,7 @@
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <link href="./mycss/mycss.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+
     <style type="text/css">
         body { padding-top: 70px; }
         .navbar-inverse {
@@ -43,6 +37,14 @@
 
 </head>
 <body>
+<!--comment Facebook-->
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!--Nav demo-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
