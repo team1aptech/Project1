@@ -9,7 +9,9 @@
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <link href="./mycss/mycss.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./nav.css">
     <style type="text/css">
         body { padding-top: 70px; }
         .navbar-inverse {
@@ -37,6 +39,67 @@
 
 </head>
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <img src="./image/banner/head.png" class="img-responsive"/>
+        </div>
+    </div>
+
+    <!--Navbar-->
+        <nav class="navbar navbar-inverse bs-dark">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Homepage <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">News <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Yamaha</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Honda</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Suzuki</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Ducati</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">KTM</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">BMW</a></li>
+
+                        </ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Price <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Yamaha</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Honda</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Suzuki</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Ducati</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">KTM</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">BMW</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact <span class="sr-only">(current)</span></a></li>
+                    <form class="navbar-form navbar-left form-horizontal" role="search">
+                        <div class="input-group">
+                            <input type="text" class="search-box" placeholder="Search" style="margin-left: 200%">
+                            <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </form>
+                </ul>
+
+
+            </div>
+        </nav>
+        <!----------- !Navbar End ------------>
+
 <!--comment Facebook-->
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -367,6 +430,85 @@
 
 <div id="fb-root"></div>
 
+</div>
+<!--Footer-->
+<footer class=" footer index-link col-sm-12 col-md-12 col-lg-12 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="link-area">
+                    <h3>FOLLOW US</h3>
+                    <P>We specialize in selling motor vehicles and associated services.</P>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <a href="#" class="fa fa-twitter"></a>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <a href="#" class="fa fa-google"></a>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="link-area">
+                    <h3>SITE</h3>
+                    <ul>
+                        <li><a href="#"> FAQ </a></li>
+                        <li><a href="#"> SITE MAP</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="link-area">
+                    <h3>PRODUCT</h3>
+                    <ul>
+                        <li><a href="#"> Product</a></li>
+                        <li><a href="#"> Product</a></li>
+                        <li><a href="#"> Product</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="link-area">
+                    <h3>FINANCE</h3>
+                    <ul>
+                        <li><a href="#"> Method Finance</a></li>
+                        <li><a href="#"> Insurance</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="index-social" style="width: 100%; height:30px; text-align: center">
+        <div class="container">
+            <div>
+                <p>   &copy;Team 1  </p>
+            </div>
+        </div>
+    </section>
+</footer>
+
+
+</div>
+
+
+
+
+
+
+<!--Footer-->
 
 </body>
 </html>
