@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Suzuki</title>
+    <title>Yamaha</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
 </head>
 <body ng-app="myFirstApp" ng-controller="myCtr">
 <div class="container">
-    <div class="col-lg-12" ng-repeat="x in suzukies" style="border: 1px solid gray">
-         <div class="col-lg-4">
-             <img ng-src={{x.src}} class="img-responsive">
-         </div>
-         <div class="col-lg-6">
-             <h3><strong style="color: #2e6da4">{{x.name}}</strong></h3>
-             <ul>
-                 <li ng-repeat="y in x.detail" class="glyphicon glyphicon-chevron-right"> {{y.content}} </li>
+    <div class="col-lg-12" ng-repeat="x in yamahaes" style="border: 1px solid gray">
+        <div class="col-lg-5">
+            <img ng-src={{x.src}} class="img-responsive">
+        </div>
+        <div class="col-lg-5">
+            <h3><strong style="color: #2e6da4">{{x.name}}</strong></h3>
+            <ul>
+                <li ng-repeat="y in x.detail" class="glyphicon glyphicon-chevron-right"> {{y.content}} </li>
             </ul>
         </div>
         <div class="col-lg-2">
