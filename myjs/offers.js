@@ -5,6 +5,9 @@ app.controller('myCtr', ['$scope', '$http', function ($scope, $http) {
     $scope.yamahaes = [];
     $scope.hondaes = [];
     $scope.harleys = [];
+    $scope.bmws = [];
+    $scope.kawasakies = [];
+    $scope.triumphs = [];
     $http
         .get("data/suzukidata.json")
         .then(function(response){
@@ -24,6 +27,21 @@ app.controller('myCtr', ['$scope', '$http', function ($scope, $http) {
         .get("data/harleydavidsondata.json")
         .then(function(response){
             $scope.harleys = response.data.harley;
+        });
+    $http
+        .get("data/bmwdata.json")
+        .then(function(response){
+            $scope.bmws = response.data.bmw;
+        });
+    $http
+        .get("data/kawasakidata.json")
+        .then(function(response){
+            $scope.kawasakies = response.data.kawasaki;
+        });
+    $http
+        .get("data/triumphdata.json")
+        .then(function(response){
+            $scope.triumphs = response.data.triumph;
         });
 }]);
 

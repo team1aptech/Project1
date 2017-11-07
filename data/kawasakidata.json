@@ -1,0 +1,59 @@
+{"kawasaki":[
+  {
+    "src": "./image/car_offers/kawasaki1.png",
+    "name": "Kawasaki NINJA H2",
+    "detail": [
+      { "content" : "Dual radial-mount, opposed 4-piston calipers, dual semi-floating 330mm discs, KIBS ABS"},
+      { "content" : "Trellis, high-tensile steel, with swingarm mounting plate"},
+      { "content" : "12 Month Limited Warranty"}
+    ],
+    "price": "28,000$",
+    "href": "https://www.kawasaki.com/Products/2018-Ninja-H2"
+  },
+  {
+    "src": "./image/car_offers/kawasaki2.png",
+    "name": "NINJA® ZX™-6R ABS KRT EDITION",
+    "detail": [
+      { "content" : "636cc inline-four engine offers racetrack-ready power yet extremely flexible delivery on the street"},
+      { "content" : "3-mode KTRC traction control tuned to cover a wide-range of riding situations and conditions"},
+      { "content" : "Showa Separate Function Fork Big Piston (SFF-BP) offers broad adjustability and progressive damping"},
+      { "content" : "FCC clutch with assist and slipper functions offers light clutch pull and minimizes wheel chatter caused by aggressive downshifting"},
+      { "content" : "Kawasaki Intelligent anti-lock Brake System (KIBS) ABS with monobloc calipers assists braking under certain conditions"}
+    ],
+    "price": "11,999$",
+    "href": "https://www.kawasaki.com/Products/2018-Ninja-ZX-6R-ABS-KRT-Edition"
+  },{
+    "src": "./image/car_offers/kawasaki3.png",
+    "name": "NINJA® 300 ABS WINTER TEST EDITION",
+    "detail": [
+      { "content" : "Smooth Power: Compact 296cc parallel-twin engine delivers smooth response and strong acceleration"},
+      { "content" : "New and exclusive: wider 150mm rear tire, taller windshield and rear seat cowl"},
+      { "content" : "The imposing stealth-like matte black color and graphic scheme is used by the Kawasaki WorldSBK team during their off-season test sessions and features minimal white graphics incorporating a snowflake with the Japanese symbol for winter"},
+      { "content" : "For more features, visit the Ninja® 300 ABS product page"}
+    ],
+    "price": "5,599$",
+    "href": "https://www.kawasaki.com/Products/2017-Ninja-300-ABS-Winter-Test-Edition"
+  },{
+    "src": "./image/car_offers/kawasaki4.png",
+    "name": "KAWASAKI VULCAN 1700 VOYAGER® ABS",
+    "detail": [
+      { "content" : "Fuel-injected 52-degree 1,700cc V-twin delivers high torque levels with a powerful and distinct V-twin feel"},
+      { "content" : "Electronic cruise control system can be activated in third gear or at any speed between 30mph and 85mph"},
+      { "content" : "Stylish, frame-mounted fairing keeps steering feel light by directing aerodynamic forces into the chassis"},
+      { "content" : "Comes with a 36-month limited warranty"}
+    ],
+    "price": "17,499$",
+    "href": "https://www.kawasaki.com/Products/2018-Vulcan-1700-Voyager-ABS"
+  },{
+    "src": "./image/car_offers/kawasaki5.png",
+    "name": "KAWASAKI KLX®250 CAMO",
+    "detail": [
+      { "content" : "New fuel injection system for easier starting at all elevations, improved fuel economy and maximum performance for everyday commuting"},
+      { "content" : "Adjustable front and rear suspension for a customized ride"},
+      { "content" : "Low seat height and ergonomics contribute to rider confidence and comfort"}
+    ],
+    "price": "5,549$",
+    "href": "https://www.kawasaki.com/Products/2018-KLX250-Camo"
+  }
+]}
+
