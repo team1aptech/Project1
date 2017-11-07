@@ -1,55 +1,55 @@
 {"triumph":[
   {
-    "src": "./image/car_offers/",
-    "name": "",
+    "src": "./image/car_offers/triumph1.png",
+    "name": "TRIUMPH ROCKET III ROADSTER",
     "detail": [
-      { "content" : ""},
-      { "content" : ""},
-      { "content" : ""}
+      { "content" : "Twin 320 mm floating discs, Nissin 4-piston fixed calipers, ABS"},
+      { "content" : "Single 316 mm disc, Brembo 2-piston floating caliper, ABS"},
+      { "content" : "KYB 43 mm upside down forks, 120 mm travel"}
     ],
-    "price": "$",
-    "href": ""
+    "price": "15,784$",
+    "href": "http://www.triumphmotorcycles.com.au/bikes/cruisers/rocket/2018/rocket-iii-roadster/variants/rocket-iii-roadster"
   },
   {
-    "src": "./image/car_offers/",
-    "name": "",
+    "src": "./image/car_offers/triumph2.png",
+    "name": "TRIUMPH STREET TRIPLE",
     "detail": [
-      { "content" : ""},
-      { "content" : ""},
-      { "content" : ""}
+      { "content" : "Twin 310 mm floating discs, Nissin 2-piston sliding calipers, switchable ABS"},
+      { "content" : "Single 220 mm disc, Brembo single piston caliper, switchable ABS"},
+      { "content" : "KYB 41 mm upside down forks, 110 mm front wheel travel"}
     ],
-    "price": "$",
-    "href": ""
+    "price": "13,290$",
+    "href": "http://www.triumphmotorcycles.com.au/bikes/roadsters-and-supersports/street/2018/street-triple-abs/variants/street-triple"
   },{
-    "src": "./image/car_offers/",
-    "name": "",
+    "src": "./image/car_offers/triumph3.png",
+    "name": "TRIUMPH STREET TRIPLE R",
     "detail": [
-      { "content" : ""},
-      { "content" : ""},
-      { "content" : ""}
+      { "content" : "Twin 310 mm floating discs. Nissin 4-piston radial calipers, switchable ABS"},
+      { "content" : "Single 220 mm disc, Brembo single piston caliper, switchable ABS"},
+      { "content" : "KYB 41 mm upside down forks with adjustable preload, rebound and compression damping, 115 mm travel"}
     ],
-    "price": "$",
-    "href": ""
+    "price": "15,290$",
+    "href": "http://www.triumphmotorcycles.com.au/bikes/roadsters-and-supersports/street/2018/street-triple-abs/variants/street-triple-r"
   },{
-    "src": "./image/car_offers/",
-    "name": "",
+    "src": "./image/car_offers/triumph4.png",
+    "name": "TRIUMPH STREET TRIPLE 660",
     "detail": [
-      { "content" : ""},
-      { "content" : ""},
-      { "content" : ""}
+      { "content" : "Twin 310 mm floating discs, Nissin 2-piston sliding calipers, switchable ABS"},
+      { "content" : "Single 220 mm disc, Brembo single piston caliper, switchable ABS"},
+      { "content" : "KYB 41 mm upside down forks, 110 mm front wheel travel"}
     ],
-    "price": "$",
-    "href": ""
+    "price": "13,999$",
+    "href": "http://www.triumphmotorcycles.com.au/bikes/roadsters-and-supersports/street/2018/street-triple-abs/variants/street-triple-660"
   },{
-    "src": "./image/car_offers/",
-    "name": "",
+    "src": "./image/car_offers/triumph5.png",
+    "name": "TRIUMPH THUNDERBIRD LT",
     "detail": [
-      { "content" : ""},
-      { "content" : ""},
-      { "content" : ""}
+      { "content" : "Twin 310 mm floating discs. Nissin 4-piston fixed calipers, ABS"},
+      { "content" : "Single 310 mm fixed disc. Brembo 2-piston floating caliper, ABS"},
+      { "content" : "Showa chromed spring twin shocks with 5 position adjustable preload. 108.5 mm rear wheel travel"}
     ],
     "price": "$",
-    "href": ""
+    "href": "http://www.triumphmotorcycles.com.au/bikes/cruisers/thunderbird/2018/thunderbird/variants/thunderbird-lt"
   }
 ]}
 
