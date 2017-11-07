@@ -1,10 +1,10 @@
 var app = angular.module("myFirstApp",[]);
 app.controller('myCtr', ['$scope', '$http', function ($scope, $http) {
-    $scope.questions = [];
+    $scope.suzukies = [];
     $http
         .get("data/dataoffer.json")
         .then(function(response){
-            $scope.questions = response.data.offer;
+            $scope.suzukies = response.data.suzuki;
         });
 }]);
 
