@@ -1,95 +1,21 @@
-<div class="container-fluid" style="width: 90%; height: auto">
-    <h2>          LATEST OFFERS
-    </h2>
-    <div class="row col-lg-12">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/suzuki1.png" class="img-responsive">
+<section class="container" style="width: 100%">
+
+    <div class="row collapse-sides">
+        <div class="col-lg-12 col-sm-12">
+            <h3 style="font-size: 2em; background-color: #a4d9ff">New Offer</h3>
+            <div class="row collapse-sides">
+                <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6"  ng-repeat="x in offers">
+                    <div class="thumbnail">
+                        <img ng-src="{{x.src}}">
+                        <div class="caption">
+                            <h3 class="textNew">
+                                <a href="{{x.href}}" role="button" class="fontNew">{{x.name}}</a>
+                            </h3>
+                            <p>{{x.content}}</p>
+                        </div>
+                    </div>
                 </div>
-                <h3>Bonus Yoshimura muffler & Genuine Suzuki Quick-Shifter on 2017 GSX-R1000 ABS</h3>
-                <p>Celebrating Josh Waters and Team Suzuki ECSTAR Australia’s 2017 Australian Superbike Championship win, Suzuki is providing GSX-R1000 ABS customers a Genuine Suzuki Bi-directional Quick-Shifter and a Yoshimura Alpha slip-on track day muffler Free-of-Charge as part our Championship Bonus promotion.</p>
-                <a href="http://www.suzukimotorcycles.com.au/offers/bonus-yoshimura-muffler-genuine-suzuki-quick-shifter-2017-gsx-r1000-abs" class="btn" style="background-color: #11fff7; width: 100%">Find Out More</a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/suzuki2.png" class="img-responsive">
-                </div>
-                <h3>Bonus Yoshimura muffler & Genuine Suzuki Quick-Shifter on 2017 GSX-R1000 ABS</h3>
-                <p>Celebrating Josh Waters and Team Suzuki ECSTAR Australia’s 2017 Australian Superbike Championship win, Suzuki is providing GSX-R1000 ABS customers a Genuine Suzuki Bi-directional Quick-Shifter and a Yoshimura Alpha slip-on track day muffler Free-of-Charge as part our Championship Bonus promotion.</p>
-                <a href="http://www.suzukimotorcycles.com.au/offers/bonus-yoshimura-muffler-genuine-suzuki-quick-shifter-2017-gsx-r1000-abs" class="btn" style="background-color:#11fff7; width: 100%">Find Out More</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/suzuki3.png" class="img-responsive">
-                </div>
-                <h3>Bonus Yoshimura muffler & Genuine Suzuki Quick-Shifter on 2017 GSX-R1000 ABS</h3>
-                <p>Celebrating Josh Waters and Team Suzuki ECSTAR Australia’s 2017 Australian Superbike Championship win, Suzuki is providing GSX-R1000 ABS customers a Genuine Suzuki Bi-directional Quick-Shifter and a Yoshimura Alpha slip-on track day muffler Free-of-Charge as part our Championship Bonus promotion.</p>
-                <a href="http://www.suzukimotorcycles.com.au/offers/bonus-yoshimura-muffler-genuine-suzuki-quick-shifter-2017-gsx-r1000-abs" class="btn" style="background-color: #11fff7; width: 100%">Find Out More</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/bmw1.jpg" class="img-responsive">
-                </div>
-                <h3> BMW S1000 RR</h3>
-                <p>The S 1000 RR’s liquid-cooled four-cylinder in-line engine is capable of 199 hp (146 kW) at 13,500 r.p.m. and a maximum torque of 83 lb-ft at 10,500 r.p.m. Yet even with this level of performance, the standard Dynamic Traction Control (DTC) ensures significantly greater safety. Three standard riding modes ("Rain", "Sport" and "Race") ensure optimal coordination of the electronic throttle, ABS, and Dynamic Traction Control (DTC) under various riding conditions... </p>
-                <a href="http://www.bmwmotorcycles.com/us/en/index.html?content=http://www.bmwmotorcycles.com/us/en/bike/sportbikes/2016/s1000rr/s1000rr_overview.html" class="btn" style="background-color: #11fff7; width: 100%">Find Out More</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/bmw2.jpg" class="img-responsive">
-                </div>
-                <h3>BMW R1200 RT</h3>
-                <p>The new RT is powered by an air/water-cooled BMW boxer engine which provides powerful forward thrust with substantial torque and an output of 125 hp. Thanks to standard Automatic Stability Control (ASC) this machine provides optimum traction to account for a variety of road surfaces and conditions. "Rain" and "Road" modes can be activated at the press of a button to adapt the motorcycle to weather and road conditions.<br><br></p>
-                <a href="http://www.bmwmotorcycles.com/us/en/index.html?content=http://www.bmwmotorcycles.com/us/en/bike/sportbikes/2016/s1000rr/s1000rr_overview.html" class="btn" style="background-color: #11fff7; width: 100%">Find Out More</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/yamaha1.jpg" class="img-responsive">
-                </div>
-                <br>
-                <h3>YAMAHA RAPTOR 700R</h3>
-                <p>Aggressive SE Style
-                    Aggressive styling makes the Raptor 700R SE look as menacing as it really is, with added features like a dealer-installed, GYTR® front grab bar and heel guards to match its unqiue graphics package. The mighty Raptor 700R SE is ready to go whether the destination is the dunes, the trails or the track.
-                    Big-Bore Power
-                    Powered by our most potent big-bore Raptor engine ever – 686cc of liquid-cooled, fuel-injected power...
-                </p>
-                <a href="https://www.yamahamotorsports.com/sport-atv/models/raptor-700r-se" class="btn" style="background-color: #11fff7; width: 100%">Find Out More</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/kawasaki1.png" class="img-responsive">
-                </div>
-                <h3>NINJA® ZX™-14R ABS</h3>
-                <p>Front Suspension / Wheel Travel43mm inverted cartridge fork with adjustable preload, 18-way compression and 15-way rebound damping adjustment/4.6 in
-                    Rear Suspension / Wheel TravelBottom-link Uni-Trak® and gas-charged shock with adjustable preload, stepless rebound and compression damping adjustments, adjustable ride height/4.9 in
-                    Front Tire120/70ZR17
-                    Rear Tire190/50ZR17
-                    Front BrakesDual floating 310mm petal discs with dual radial-mounted 4-piston calipers and ABS
-                    Rear BrakesSingle 250mm petal... </p>
-                <a href="https://www.kawasaki.com/products/2017-Ninja-ZX-14R-ABS" class="btn" style="background-color: #11fff7; width: 100%">Find Out More</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/kawasaki2.png" class="img-responsive">
-                </div>
-                <h3>NINJA H2™ CARBON</h3>
-                <p>Front Suspension / Wheel Travel43mm inverted fork with rebound and compression damping, spring preload adjustability and top-out springs/4.7 in
-                    Rear Suspension / Wheel TravelNew Uni-Trak, Öhlins TTX36 gas charged shock with piggyback reservoir, compression and rebound damping and spring preload adjustability, and top-out spring/5.3 in
-                    Front Tire120/70 ZR17 (58W)
-                    Rear Tire200/55 ZR17 (78W)
-                    Front BrakesDual radial-mount, opposed 4-piston calipers, dual semi-floating 330mm discs, KIBS ABS
-                    Rear BrakesOpposed 2-piston calipers, single 250mm disc, KIBS ABS</p>
-                <a href="https://www.kawasaki.com/products/2018-Ninja-H2-Carbon" class="btn" style="background-color: #11fff7; width: 100%">Find Out More</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="container-fluid">
-                    <img src="./image/xe/honda1.jpg" class="img-responsive">
-                </div>
-                <br>
-                <h3>HONDA CRF150F</h3>
-                <p>Choosing the right dirt bike for a smaller rider is about three things: the right fit, an appropriate amount of power, and quality. The Honda CRF150F takes our entry-level dirt bike and moves it up a notch or two. It’s a little taller, to fit taller riders. It also offers an easy-to-use electric starter. In terms of power, its smooth four-stroke engine delivers plenty, but the powerband is tuned to be plenty rider friendly too. Pro-Link® rear suspension takes on the bumps and knocks of the trail. A five-speed transmission gives your rider the control of a big bike. And then there’s Honda’s legendary reliability and build quality...
-                </p>
-                <a href="http://powersports.honda.com/2017/crf150f.aspx" class="btn" style="background-color: #11fff7; width: 100%">Find Out More</a>
-            </div>
+        </div>
     </div>
-</div>
+</section>

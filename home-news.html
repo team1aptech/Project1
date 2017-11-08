@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <script src="./bootstrap/js/jquery-3.2.1.min.js"></script>
     <script src="./angular/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <script src="./myjs/offers.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <link href="./mycss/mycss.css" rel="stylesheet">
@@ -14,15 +15,16 @@
     <link rel="stylesheet" href="./footer.css">
 </head>
 <body class="container" ng-app="myFirstApp" ng-controller="myCtr">
-
 <div class="container-fluid">
     <div header-main></div>
     <!--carousel in home page-->
-<div carousel-main></div>
+    <div carousel-main></div>
     <!--offers product-->
-<div offer-sell></div>
+<div ng-view>
+    <div offer-sell></div>
 <!--Section News & Event - Facebook-->
-<div new-events></div>
+    <div new-events></div>
+</div>
 </div>
 <!--Footer-->
 <div footer-main></div>

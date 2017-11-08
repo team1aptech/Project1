@@ -8,6 +8,8 @@ app.controller('myCtr', ['$scope', '$http', function ($scope, $http) {
     $scope.bmws = [];
     $scope.kawasakies = [];
     $scope.triumphs = [];
+    $scope.offers = [];
+
     $http
         .get("data/suzukidata.json")
         .then(function(response){
@@ -42,6 +44,11 @@ app.controller('myCtr', ['$scope', '$http', function ($scope, $http) {
         .get("data/triumphdata.json")
         .then(function(response){
             $scope.triumphs = response.data.triumph;
+        });
+    $http
+        .get("data/offer.json")
+        .then(function(response){
+            $scope.offers = response.data.offer;
         });
 }]);
 
@@ -91,3 +98,4 @@ app.directive("hondaPage",function () {
         templateUrl : "honda.html"
     }
 });
+
