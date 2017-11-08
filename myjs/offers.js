@@ -1,5 +1,5 @@
 var app = angular.module("myFirstApp",[]);
-//get data suzuki for offer
+//get data for pages product
 app.controller('myCtr', ['$scope', '$http', function ($scope, $http) {
     $scope.suzukies = [];
     $scope.yamahaes = [];
@@ -45,4 +45,49 @@ app.controller('myCtr', ['$scope', '$http', function ($scope, $http) {
         });
 }]);
 
+<!--comment Facebook-->
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
+//create Directives
+app.directive("headerMain",function () {
+    return{
+        restric: "AEC",
+        templateUrl : "header.html"
+    }
+});
+app.directive("offerSell",function () {
+    return{
+        restric: "AEC",
+        templateUrl : "offers.html"
+    }
+});
+app.directive("carouselMain",function () {
+    return{
+        restric: "AEC",
+        templateUrl : "carousel.html"
+    }
+});
+app.directive("newEvents",function () {
+    return{
+        restric: "AEC",
+        templateUrl : "new-events.html"
+    }
+});
+app.directive("footerMain",function () {
+    return{
+        restric: "AEC",
+        templateUrl : "footer.html"
+    }
+});
+app.directive("hondaPage",function () {
+    return{
+        restric: "AEC",
+        templateUrl : "honda.html"
+    }
+});
