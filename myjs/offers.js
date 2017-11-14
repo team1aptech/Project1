@@ -1,4 +1,4 @@
-var app = angular.module("myFirstApp",[]);
+var app = angular.module("myFirstApp",['ui.router']);
 //get data for pages product
 app.controller('myCtr', ['$scope', '$http', function ($scope, $http) {
     $scope.suzukies = [];
@@ -99,3 +99,49 @@ app.directive("hondaPage",function () {
     }
 });
 
+app.config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/'); //Mọi đường dẫn không hợp lệ đều được chuyển đến state home
+
+    $stateProvider
+
+        .state('suzuki', { // Định ngĩa 1 state product
+            url: '/suzuki', // khai báo Url hiển thị
+            templateUrl: 'suzuki.html' //đường dẫn view
+        })
+
+        .state('home', {
+            url: '/',
+            templateUrl: 'offers.html'
+        })
+
+        .state('yamaha', {
+            url: '/yamaha',
+            templateUrl: 'yamaha.html'
+        })
+        .state('honda', {
+            url: '/honda',
+            templateUrl: 'honda.html'
+        })
+        .state('triumph', {
+            url: '/triumph',
+            templateUrl: 'triumph.html'
+        })
+        .state('harley', {
+            url: '/harley',
+            templateUrl: 'harley.html'
+        })
+        .state('bmw', {
+            url: '/bmw',
+            templateUrl: 'bmw.html'
+        })
+        .state('kawasaki', {
+            url: '/kawasai',
+            templateUrl: 'kawasaki.html'
+        })
+        .state('news', {
+            url: '/news',
+            templateUrl: 'news.html'
+        })
+
+});
