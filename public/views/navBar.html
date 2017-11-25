@@ -1,0 +1,147 @@
+
+
+<div id="header"   >
+    <nav class="navbar navbar-inverse" ng-controller="storeController">
+        <div class="container" style="margin-left: auto; margin-right: auto">
+            <div class="navbar-header pull-right" >
+
+                <div>
+                    <!--<button type="button" class="navbar-toggle collapsed search2" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false" style="margin-right: 20px">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-nav-demo" style="margin-left: -30px;border: none;">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/yamaha">Yamaha</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/honda">Honda</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/suzuki">Suzuki</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/harley">Harley-Davidson</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/kawasaki">Kawasaki</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/bmw">BMW</a></li>
+                        </ul>
+                    </li>
+                    <li ng-hide="showUser"><a href="" class="dropdown-toggle" data-toggle="dropdown" >Contact <span class="caret"></span></a>
+
+
+                        <ul class="dropdown-menu">
+                            <li><a href="/prices">Prices</a></li>
+                            <li><a href="/sign-up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <!--<li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                            <li class="dropdown">
+                                <a href="/sign-in" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login</span></a>
+
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <!--<div  style="margin-left: 2px; padding: 5px">-->
+                            <a href="/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                                <i class="fa fa-shopping-cart" aria-hidden="true">  </i>
+                                <b>{{cart.getTotalCount()}}</b> items - <b>{{cart.getTotalPrice() | currency:$:0}}</b>
+                            </a>
+                        <!--</div>-->
+
+                    </li>
+
+                </ul>
+                <div >
+                    <ul  class="nav navbar-nav navbar-right" ng-show="showUser" ng-repeat="name in user">
+                        <li><a href="">Welcome <strong> {{name.email}} </strong></a></li>
+                        <li ><a role="button" ng-click="logOutUser()|| hidePermanently()" > <span class="glyphicon glyphicon-log-out"></span> LogOut!</a></li>
+                        <li style="margin-right: 5px;">
+
+                            <a href="/store" style="color: white"> <i class="fa fa-search" aria-hidden="true"></i> </a>
+
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right" ng-hide="showUser">
+                        <li><a href="/sign-up" class="search3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <!--<li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle search3" data-toggle="dropdown" ><span class="glyphicon glyphicon-log-in"></span> Login<span class="caret"></span></a>
+                            <ul class="dropdown-menu login-dp">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12" style="color: black">
+                                            Login via
+                                            <div class="social-buttons">
+                                                <a href="" class="btn btn-fb btn-sm"><i class="fa fa-facebook"></i> Facebook</a>
+                                                <a href="" class="btn btn-tw btn-sm"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            or
+                                            <form class="form" name= "logIn" role="form" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="InputEmail2">Email address</label>
+                                                    <input type="email" class="form-control" id="InputEmail2" placeholder="Email address" ng-model="userData.email" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="InputPassword2">Password</label>
+                                                    <input type="password" class="form-control" id="InputPassword2" placeholder="Password"  ng-model="userData.password" required>
+                                                    <div class="help-block text-right"><a href="" style="color: #337ab7;">Forget the password ?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <!--<button type="submit" class="btn btn-primary btn-block" ng-click="createUser()" ng-model="findUser" ng-value="false" >Sign in</button>-->
+                                                    <button  type="submit" class="btn btn-primary btn-block" ng-click="logIn.$valid && (createUser() || showPermanently())" >Sign in</button>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> keep me logged-in
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="bottom text-center" style="color: black;">
+                                            New here ? <a href="/sign-up" style="color: #337ab7;"><b>Join Us</b></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li style="margin-right: 5px;">
+                            <form class="navbar-form" style="margin-bottom: 0;padding: 0;border: none;">
+                                <div class="form-group search1">
+                                    <input  ng-model="search"  type="text" class="form-control" placeholder="Find your motorcycle" size="15" style="margin-bottom: 0;">
+                                </div>
+                                <!--<a href="/store" class="btn btn-default" style="color: black;margin-left: 20px;"> <i class="fa fa-search fa-lg" aria-hidden="true"></i> </a>-->
+                            </form>
+                        </li>
+                        <li style="margin-right: 5px;">
+
+                            <a href="/store" style="color: white"> <i class="fa fa-search" aria-hidden="true"></i> </a>
+
+                        </li>
+
+                    </ul>
+                    <!--<div style="margin-top: 5px;" class="search3">-->
+                        <!--<a href="/store" class="btn btn-default" style="color: black; display: none">Search</a>-->
+                    <!--</div>-->
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+</div>

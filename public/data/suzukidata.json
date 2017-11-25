@@ -1,0 +1,63 @@
+{"suzuki":[
+  {
+    "src": "./image/car_offers/GSX-R1000_Yoshimura_Aplha_1507873479.png",
+    "name": "2017 GSX-R1000 ABS",
+    "detail": [
+      { "content" : "We won the 2017 ASBK Championship, Now You Win!"},
+      { "content" : "Bonus Genuine Suzuki Quick-Shift System (fitting included FOC)"},
+      { "content" : "Bonus Yoshimura Alpha Stainless Slip-On Muffler"}
+      ],
+    "price": "23,990$",
+    "href": "/offers/suzuki-01"
+  },
+  {
+    "src": "./image/car_offers/suzuki2.png",
+    "name": "2017 HAYABUSA",
+    "detail": [
+      { "content" : "Legendary inline-four power plant"},
+      { "content" : "Suzuki Drive Mode Selector (S-DMS)"},
+      { "content" : "Brembo Monobloc front brake calipers with ABS"},
+      { "content" : "Lightweight titanium valves"}
+    ],
+    "price": "20,790$",
+    "href": "/offers/suzuki-02"
+  },
+  {
+    "src": "./image/car_offers/suzuki3.png",
+    "name": "2017 GSX-R750 RUN OUT RIDE AWAY",
+    "detail": [
+      { "content" : "State of the art in-line, 4-cylinder engine"},
+      { "content" : "Suzuki Drive Mode Selector (S-DMS)"},
+      { "content" : "Brembo Monobloc front brake calipers"},
+      { "content" : "Showa Big Piston Fork (BPF) & Electronic Steering Damper"}
+    ],
+    "price": "19,990$",
+    "href": "/offers/suzuki-03"
+  },
+  {
+    "src": "./image/car_offers/suzuki4.png",
+    "name": "2017 GSX-R600 RUN OUT RIDE AWAY",
+    "detail": [
+      { "content" : "State of the art in-line, 4-cylinder engine"},
+      { "content" : "Suzuki Drive Mode Selector (S-DMS)"},
+      { "content" : "Brembo Monobloc front brake calipers"},
+      { "content" : "Showa Big Piston Fork (BPF) & Electronic Steering Damper"}
+    ],
+    "price": "16,490$",
+    "href": "/offers/suzuki-04"
+  },
+  {
+    "src": "./image/car_offers/suzuki5.png",
+    "name": "DR-Z70 SPECIAL CHRISTMAS PRICING",
+    "detail": [
+      { "content" : "70cc Ultra-reliable, 4-Stroke engine"},
+      { "content" : "Electric Start with backup kick-starter"},
+      { "content" : "3-speed semi-automatic transmission"},
+      { "content" : "Adjustable throttle limiter and keyed ignition"}
+    ],
+    "price": "2,090$",
+    "href": "/offers/suzuki-05"
+  }
+
+]}
+
