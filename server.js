@@ -4,8 +4,6 @@ var app                   = express();
 var mongoose              = require('mongoose');
 var bodyParser            = require('body-parser');
 
-// var Comment = require('./public/model/comment');
-
 var commentSchema = mongoose.Schema({
     text: String,
     author: String
@@ -948,10 +946,6 @@ app.post('/api/comments/yamaha-05', function (req, res) {
 app.get('*', function(req, res) {
     res.sendfile('./public/index.html');
 });
-
-
-
-
 
 // start app ===============================================
 

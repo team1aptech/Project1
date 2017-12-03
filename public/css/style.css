@@ -1,3 +1,208 @@
-body { padding-top:30px; }
+
+html, body {
+    height: 100%;
+}
+.fa{
+    font-size: 20px;
+}
+.navbar-nav>li>a {
+    padding-bottom: 10px;
+}
+img {
+    max-width: 100%;
+}
+.navbar-inverse {
+    /*background: #2c3e50;*/
+    background: #252e31;
+    color: white;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse a{
+    color:white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.fontNew{
+    font-family: 'Russo One', sans-serif;
+
+}
+.fontNew a{
+    text-decoration: none;
+    text-align: center;
+    color: #2c3e50;
+}
+a:hover{
+    text-decoration: none;
+    color: #19abed;
+}
+a:visited{
+    text-decoration: none;
+}
+/*form*/
+
+
+
+/*product hone*/
+.section-content {
+    padding: 5rem 0;
+}
+
+
+/*style for new single page*/
+.section_header{
+    margin: 0 0 20px;
+}
+.section_header_headline{
+    font-size: 36px;
+    color: #525558;
+    max-width: 1000px;
+    font-weight: 200;
+}
+.section_header_excerpt{
+    font-size: 14px;
+    color: #71767a;
+    max-width: 800px;
+}
+.offset-1{
+    margin-left: 2%;
+}
+.newsContent-text{
+    font-size: 15px;
+    width: 100%;
+    color: #71767a;
+    line-height: 1.4;
+}
+.newsThumbnail-img img{
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+
+.listImage li{
+    list-style: none;
+    line-height: 3;
+    margin-left: 2px;
+}
+.listImage li:before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('images/icon/icon1.jpg');
+    vertical-align: middle;
+    margin-right: 1em;
+    margin-left: -3em;
+
+
+}
+.love{
+    border-bottom: 4px black solid;
+
+}
+.nav>li>a {
+    padding: 15px 10px;
+}
+
+@media screen and (max-width: 1200px){
+    .search1{
+        display: none;
+    }
+    .navbar-form .form-control{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 991px){
+    .search2{
+        display: none;
+    }
+    .navbar-form .form-control{
+        display: none;
+    }
+}
+
+@media screen and  (max-width: 991px) {
+    .search3 {
+        display: none!important;
+    }
+
+}
+@media screen and  (max-width: 768px) {
+    .fixnav{
+        width: 100%;
+    }
+}
+@media screen and  (max-width: 500px) {
+    .img-hide {
+        display: none!important;
+    }
+}
+
+.fixnav{
+    position: fixed;
+    /*width: 100%;*/
+    top: 0;
+    z-index: 1;
+}
+#fixNav{
+
+}
+.navbar-nav {
+    margin: 0px 0px;
+}
+.fa-cc-mastercard:before {
+    content: "\f1f1";
+    font-size: 30px;
+}
+.fa-cc-visa:before {
+    content: "\f1f0";
+    font-size: 30px;
+}
+.fa-cc-paypal:before {
+    content: "\f1f4";
+    font-size: 30px;
+}
+.fa-twitter-square:before {
+    content: "\f081";
+    margin-right: -47px;
+}
+.fa-google-plus-square:before {
+    content: "\f0d4";
+    margin-right: -80px;
+}
+.fa-newspaper-o:before {
+    content: "\f1ea";
+    font-size: 40px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: rgb(23,96,147);
+    opacity: 0.5;
+    display: none;
+}
+.back-to-top:hover {
+         opacity: 1;
+         cursor: pointer;
+     }
+
+.back-to-top i {
+        font-size: 25px;
+        padding: 7px;
+        color: #FFF;
+    }
+
+
+
+
+
 
 

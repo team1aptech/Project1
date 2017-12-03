@@ -1,6 +1,6 @@
 {"kawasaki":[
   {
-    "src": "./image/car_offers/kawasaki1.png",
+    "src": "./images/image/car_offers/kawasaki1.png",
     "name": "Kawasaki NINJA H2",
     "detail": [
       { "content" : "Dual radial-mount, opposed 4-piston calipers"},
@@ -12,7 +12,7 @@
     "href": "/offers/kawasaki-01"
   },
   {
-    "src": "./image/car_offers/kawasaki2.png",
+    "src": "./images/image/car_offers/kawasaki2.png",
     "name": "NINJA ZX™-6R ABS KRT EDITION",
     "detail": [
       { "content" : "636cc inline-four engine offers racetrack-ready on the street"},
@@ -25,7 +25,7 @@
     "price": "11,999$",
     "href": "/offers/kawasaki-02"
   },{
-    "src": "./image/car_offers/kawasaki3.png",
+    "src": "./images/image/car_offers/kawasaki3.png",
     "name": "NINJA 300 ABS WINTER TEST EDITION",
     "detail": [
       { "content" : "Smooth Power: Compact 296cc parallel-twin engine"},
@@ -38,7 +38,7 @@
     "price": "5,599$",
     "href": "/offers/kawasaki-03"
   },{
-    "src": "./image/car_offers/kawasaki4.png",
+    "src": "./images/image/car_offers/kawasaki4.png",
     "name": "KAWASAKI VULCAN 1700 VOYAGER® ABS",
     "detail": [
       { "content" : "Fuel-injected 52-degree 1,700cc V-twin delivers high torque levels"},
@@ -49,7 +49,7 @@
     "price": "17,499$",
     "href": "/offers/kawasaki-04"
   },{
-    "src": "./image/car_offers/kawasaki5.png",
+    "src": "./images/image/car_offers/kawasaki5.png",
     "name": "KAWASAKI KLX®250 CAMO",
     "detail": [
       { "content" : "New fuel injection system for easier starting at all elevations"},

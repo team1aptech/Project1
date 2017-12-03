@@ -1,6 +1,6 @@
 {"bmw":[
   {
-    "src": "./image/car_offers/bmw1.jpg",
+    "src": "./images/image/car_offers/bmw1.jpg",
     "name": "BMW S 1000 RR",
     "detail": [
                 { "content" : "Liquid-cooled 4-stroke in-line 4-cylinder engine. "},
@@ -16,7 +16,7 @@
 
   },
   {
-    "src": "./image/car_offers/bmw2.jpg",
+    "src": "./images/image/car_offers/bmw2.jpg",
     "name": " BMW R 1200 GS ADVENTURE",
     "detail": [
       { "content" : "Air/liquid-cooled four stroke flat twin engine with balancer shaft"},
@@ -27,7 +27,7 @@
     "price": "18,895$",
     "href": "/offers/bmw-02"
   },{
-    "src": "./image/car_offers/bmw3.jpg",
+    "src": "./images/image/car_offers/bmw3.jpg",
     "name": "BMW C 650 GT",
     "detail": [
                 { "content" : "31.7 ' (805 mm) Standard; low seat height 30.9'  (785 mm)"},
@@ -39,7 +39,7 @@
     "href": "/offers/bmw-03"
   },
   {
-    "src": "./image/car_offers/bmw4.jpg",
+    "src": "./images/image/car_offers/bmw4.jpg",
     "name": "BMW S 1000 XR",
     "detail": [
                 { "content" : "CNC-milled, HP driver footrests, including gear and brake levers"},
@@ -52,7 +52,7 @@
     "href": "/offers/bmw-04"
   },
   {
-    "src": "./image/car_offers/bmw5.jpg",
+    "src": "./images/image/car_offers/bmw5.jpg",
     "name": "BMW C EVOLUTION",
     "detail": [
                   { "content" : "Capacity: approx. 35 l, big enough to accommodate 1 helmet"},

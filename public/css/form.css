@@ -38,6 +38,37 @@
     color: #fff;
     background-color:#59b5fa;
 }
+
+.formSignUP { padding-top:30px; }
+.form-control { margin-bottom: 10px; }
+
+.formSignUP {
+    background: url('../images/background/city.jpg') fixed;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:768px){
     .login-dp{
         background-color: inherit;
@@ -47,13 +78,4 @@
         background-color: inherit;
         border-top:0 none;
     }
-}
-
-.formSignUP { padding-top:30px; }
-.form-control { margin-bottom: 10px; }
-
-.formSignUP {
-    background: url('http://i.imgur.com/Au8To6H.jpg') fixed;
-    background-size: cover;
-
 }

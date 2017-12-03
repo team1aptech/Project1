@@ -1,0 +1,41 @@
+<div nav-bar class="navbar navbar-fixed-top"></div>
+<br><br><br>
+<div>
+<div class="container">
+    <img src="../images/Contact-us-Snugg-Living.jpg" class="img-responsive">
+</div>
+<div class="container">
+    <h2>CONTACT US</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="please fill your name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="please fill your email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label><br>
+            <input class="form-control" placeholder="please fill your phone"  maxlength="11" required="required" name="phone" type="tel" id="phone" >
+        </div>
+        <div class="form-group">
+            <label for="country_id">Country:</label>
+            <select class="form-control" required="required" id="country_id" name="country_id">
+                <option ng-repeat="x in country" value="{{x.name}}">{{x.name}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comment">Address</label>
+            <textarea id="comment" name="subject" placeholder="please fill your address" class="form-control"></textarea>
+        </div>
+        <div class="/action_page.php">
+            <div class="checkbox">
+                <button type="submit" class="btn btn-default" style="background:rgba(35,17,41,0.84)"><strong style="color: white">Submit</strong></button>
+                <button type="reset" class="btn btn-default" style="background:rgba(35,17,41,0.84)"><strong style="color: white">Reset</strong></button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+

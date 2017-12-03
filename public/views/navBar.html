@@ -1,12 +1,10 @@
 
 
-<div id="header"   >
+<div id="header">
     <nav class="navbar navbar-inverse" ng-controller="storeController">
         <div class="container" style="margin-left: auto; margin-right: auto">
             <div class="navbar-header pull-right" >
-
                 <div>
-                    <!--<button type="button" class="navbar-toggle collapsed search2" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">-->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false" style="margin-right: 20px">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -17,8 +15,9 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-nav-demo" style="margin-left: -30px;border: none;">
                 <ul class="nav navbar-nav">
+                    <!--<li><a href="/" onClick="window.location.reload()" >Home</a></li>-->
                     <li><a href="/">Home</a></li>
-                    <li><a href="/news">News</a></li>
+                    <li><a href="/news" >News</a></li>
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -35,47 +34,32 @@
                             <li><a href="/bmw">BMW</a></li>
                         </ul>
                     </li>
-                    <li ng-hide="showUser"><a href="" class="dropdown-toggle" data-toggle="dropdown" >Contact <span class="caret"></span></a>
-
-
+                    <li><a href="" class="dropdown-toggle" data-toggle="dropdown" >Contact <span class="caret"></span></a>
                         <ul class="dropdown-menu">
+                            <li><a href="/contact">Contact us</a></li>
                             <li><a href="/prices">Prices</a></li>
-                            <li><a href="/sign-up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <!--<li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
-                            <li class="dropdown">
-                                <a href="/sign-in" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login</span></a>
-
-                            </li>
                         </ul>
-
                     </li>
                     <li>
-                        <!--<div  style="margin-left: 2px; padding: 5px">-->
-                            <a href="/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
-                                <i class="fa fa-shopping-cart" aria-hidden="true">  </i>
-                                <b>{{cart.getTotalCount()}}</b> items - <b>{{cart.getTotalPrice() | currency:$:0}}</b>
-                            </a>
-                        <!--</div>-->
-
+                        <a href="/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                            <i class="fa fa-shopping-cart" aria-hidden="true">  </i>
+                            <b>{{cart.getTotalCount()}}</b> items - <b>{{cart.getTotalPrice() | currency:$:0}}</b>
+                        </a>
                     </li>
-
                 </ul>
                 <div >
                     <ul  class="nav navbar-nav navbar-right" ng-show="showUser" ng-repeat="name in user">
-                        <li><a href="">Welcome <strong> {{name.email}} </strong></a></li>
+                        <li><a href="">Hi, <strong> {{name.email}} </strong></a></li>
                         <li ><a role="button" ng-click="logOutUser()|| hidePermanently()" > <span class="glyphicon glyphicon-log-out"></span> LogOut!</a></li>
                         <li style="margin-right: 5px;">
-
                             <a href="/store" style="color: white"> <i class="fa fa-search" aria-hidden="true"></i> </a>
-
                         </li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right" ng-hide="showUser">
-                        <li><a href="/sign-up" class="search3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <!--<li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                        <li><a href="/sign-up" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li class="dropdown">
-                            <a href="" class="dropdown-toggle search3" data-toggle="dropdown" ><span class="glyphicon glyphicon-log-in"></span> Login<span class="caret"></span></a>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-log-in"></span> Login<span class="caret"></span></a>
                             <ul class="dropdown-menu login-dp">
                                 <li>
                                     <div class="row">
@@ -97,7 +81,6 @@
                                                     <div class="help-block text-right"><a href="" style="color: #337ab7;">Forget the password ?</a></div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <!--<button type="submit" class="btn btn-primary btn-block" ng-click="createUser()" ng-model="findUser" ng-value="false" >Sign in</button>-->
                                                     <button  type="submit" class="btn btn-primary btn-block" ng-click="logIn.$valid && (createUser() || showPermanently())" >Sign in</button>
                                                 </div>
                                                 <div class="checkbox">
@@ -114,34 +97,19 @@
                                 </li>
                             </ul>
                         </li>
-
                         <li style="margin-right: 5px;">
                             <form class="navbar-form" style="margin-bottom: 0;padding: 0;border: none;">
                                 <div class="form-group search1">
                                     <input  ng-model="search"  type="text" class="form-control" placeholder="Find your motorcycle" size="15" style="margin-bottom: 0;">
                                 </div>
-                                <!--<a href="/store" class="btn btn-default" style="color: black;margin-left: 20px;"> <i class="fa fa-search fa-lg" aria-hidden="true"></i> </a>-->
                             </form>
                         </li>
                         <li style="margin-right: 5px;">
-
                             <a href="/store" style="color: white"> <i class="fa fa-search" aria-hidden="true"></i> </a>
-
                         </li>
-
                     </ul>
-                    <!--<div style="margin-top: 5px;" class="search3">-->
-                        <!--<a href="/store" class="btn btn-default" style="color: black; display: none">Search</a>-->
-                    <!--</div>-->
-
-
-
-
                 </div>
-
-
             </div>
         </div>
     </nav>
-
 </div>

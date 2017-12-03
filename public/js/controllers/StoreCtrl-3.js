@@ -8,10 +8,6 @@ storeApp.factory("DataService", function ($http) {
     $http.get("data/data-product-price.json").then(function (response) {
         myStore.products = response.data.product;
     });
-    myStore.products.bmws = [];
-    $http.get("data/data-product-price.json").then(function (response) {
-        myStore.products.bmws = response.data.product.bmw;
-    });
 
     myStore.products.yamahaes = [];
     $http.get("data/data-product-price.json").then(function (response) {
@@ -38,6 +34,11 @@ storeApp.factory("DataService", function ($http) {
         myStore.products.harleys = response.data.product.harley;
     });
 
+    myStore.products.bmws = [];
+    $http.get("data/data-product-price.json").then(function (response) {
+        myStore.products.bmws = response.data.product.bmw;
+    });
+
     // create shopping cart
     var myCart = new shoppingCart("motorStore");
 
@@ -56,6 +57,9 @@ storeApp.controller("storeController", function ($scope, DataService,$http,$loca
     $scope.prices = [];
     $http.get("data/prices.json").then(function (response) {
         $scope.prices = response.data.manufacture;
+    });
+    $http.get("data/countries.json").then(function (response) {
+        $scope.country = response.data.countries;
     });
 
     //comment data
@@ -130,6 +134,12 @@ storeApp.controller("storeController", function ($scope, DataService,$http,$loca
     $http.get('/api/comments/commentNews-01').then(function(response) {
         $scope.commentSinglePageNews01 = response.data;
     });
+    $scope.createCommentBmw01 = function () {
+        $http.post('/api/comments/bmw-01', $scope.commentBmw01Data).then(function (response) {
+            $scope.commentBmw01Data = {};
+            $scope.commentBmw01 = response.data;
+        })
+    };
 
     $http.get('/api/comments/bmw-01').then(function(response) {
         $scope.commentBmw01 = response.data;
@@ -253,12 +263,7 @@ storeApp.controller("storeController", function ($scope, DataService,$http,$loca
         })
     };
 
-    $scope.createCommentBmw01 = function () {
-        $http.post('/api/comments/bmw-01', $scope.commentBmw01Data).then(function (response) {
-            $scope.commentBmw01Data = {};
-            $scope.commentBmw01 = response.data;
-        })
-    };
+
     $scope.createCommentBmw02 = function () {
         $http.post('/api/comments/bmw-02', $scope.commentBmw02Data).then(function (response) {
             $scope.commentBmw02Data = {};
@@ -447,9 +452,9 @@ function cartItem(branch, name, price, quantity) {
     this.name = name;
     this.price = price;
     this.quantity = quantity;
+    console.log(this);
 }
 // shopping cart
-
 function shoppingCart(cartName) {
     this.cartName = cartName;
     this.items = [];
@@ -471,13 +476,14 @@ shoppingCart.prototype.loadItems = function () {
         }
     }
     console.log(localStorage);
+    console.log(this);
 };
 // save items to local storage
 shoppingCart.prototype.saveItems = function () {
         localStorage[this.cartName + "_items"] = JSON.stringify(this.items);
         console.log(localStorage);      //checkLocalStorage
 };
-
+// add items to local storage
 shoppingCart.prototype.addItem = function (branch, name, price, quantity) {
         // update quantity for existing item
         var found = false;
@@ -497,7 +503,7 @@ shoppingCart.prototype.addItem = function (branch, name, price, quantity) {
         // save changes
         this.saveItems();
 };
-
+// remove items to local storage
 shoppingCart.prototype.removeItem = function(entry){
     var index = this.items.indexOf(entry);
     this.items.splice(index, 1);

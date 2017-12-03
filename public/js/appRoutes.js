@@ -181,6 +181,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             templateUrl: 'views/prices.html',
             controller: 'storeController'
         })
+        .when('/contact', {
+            templateUrl: 'views/contact_us.html',
+            controller: 'storeController'
+        })
         .otherwise({
                 redirectTo: "/"
             });
