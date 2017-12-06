@@ -12,7 +12,7 @@ create Website by:
 
 With terminal go to the forder keep this project (forder keep file server.js) and write: node server.js for running node server with localhost:8080
 
-Go to you browser with localhost:8080 and see this website.
+Go to your browser with localhost:8080 and see this website.
 
 Thanks and best regard,
 
