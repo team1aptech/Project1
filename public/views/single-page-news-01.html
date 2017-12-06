@@ -129,7 +129,7 @@
         </div>
     </div>
 
-    <div class="container"  ng-repeat="comment in commentSinglePageNews01">
+    <div class="container"  ng-repeat="comment in commentSinglePageNews01| orderBy:'-date'">
         <div class="row">
             <div class="col-sm-9">
                 <div class="panel panel-white post panel-shadow">
@@ -142,7 +142,7 @@
                                 <a href="#"><b>{{comment.author}}</b></a>
                                 made a post.
                             </div>
-                            <h6 class="text-muted time">1 minute ago</h6>
+                            <h6 class="text-muted time">{{comment.date|date:'MMM d, y h:mm:ss a'}}</h6>
                         </div>
                     </div>
                     <div class="post-description">

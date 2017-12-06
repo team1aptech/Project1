@@ -1,12 +1,13 @@
 // modules =================================================
-var express               = require('express');
-var app                   = express();
-var mongoose              = require('mongoose');
-var bodyParser            = require('body-parser');
+var express       = require('express');
+var app           = express();
+var mongoose      = require('mongoose');
+var bodyParser    = require('body-parser');
 
-var commentSchema = mongoose.Schema({
+var commentSchema = new mongoose.Schema({
     text: String,
-    author: String
+    author: String,
+    date: {type: Date, default: Date.now }
 });
 var Bmw01 = mongoose.model('Bmw01', commentSchema);
 var Bmw02 = mongoose.model('Bmw02', commentSchema);

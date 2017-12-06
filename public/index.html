@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base href="/">
 
 	<title>Team 1 - Drive With Smiles</title>
@@ -20,10 +21,15 @@
 	<link rel="stylesheet" href="css/shopping-cart-style.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/add-comments.css">
-	<link rel="icon" type="image/x-icon" href="images/icon/motorcycle.jpg">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/cover.css">
+	<!--Icon-->
+	<link rel="icon" type="image/x-icon" href="images/icon/motorcycle.jpg">
+	<!-- JQuery -->
+	<script src="jQuery/jquery-3.2.1.js"></script>
+	<!--JS bootstrap-->
+	<script src="bootstrap-3.3.7/dist/js/bootstrap.js"></script>
 
 	<!-- JS -->
 	<script src="libs/angular/angular.min.js"></script>
@@ -125,19 +131,17 @@
 <back-to-top></back-to-top>
 
 
+<!--Facebook comment-->
 <div id="fb-root"></div>
-<script src="jQuery/jquery-3.2.1.js"></script>
-<script src="bootstrap-3.3.7/dist/js/bootstrap.js"></script>
-
-	<script>(function(d, s, id) {
+<script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-	</script>
-	<script>
+</script>
+<script>
         $(document).ready(function(){
             $(window).scroll(function(){
                 if($(window).scrollTop() > 200){

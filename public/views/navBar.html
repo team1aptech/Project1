@@ -43,7 +43,7 @@
                     <li>
                         <a href="/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                             <i class="fa fa-shopping-cart" aria-hidden="true">  </i>
-                            <b>{{cart.getTotalCount()}}</b> items - <b>{{cart.getTotalPrice() | currency:$:0}}</b>
+                            <b>{{cart.getTotalCount()}}</b> items - <b>{{cart.getTotalPrice() + cart.getTotalPrice()*0.1 | currency:$:0}}</b>
                         </a>
                     </li>
                 </ul>

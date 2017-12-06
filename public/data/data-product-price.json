@@ -4,7 +4,7 @@
             [
               {
               "name": "BMW S1000RR",
-              "branch": "BMW",
+              "branch": "../images/BMW/bmw-1.jpg",
               "image": "bmw-1",
               "price": 15995,
               "description": [
@@ -17,7 +17,7 @@
               },
               {
                 "name": "BMW R1200GS",
-                "branch": "BMW",
+                "branch": "../images/BMW/bmw-2.jpg",
                 "image": "bmw-2",
                 "price": 18895,
                 "description": [
@@ -29,7 +29,7 @@
               },
               {
                 "name": "BMW C650GT",
-                "branch": "BMW",
+                "branch": "../images/BMW/bmw-3.jpg",
                 "image": "bmw-3",
                 "price": 10595,
                 "description": [
@@ -41,7 +41,7 @@
               },
               {
                 "name": "BMW S1000XR",
-                "branch": "BMW",
+                "branch": "../images/BMW/bmw-4.jpg",
                 "image": "bmw-4",
                 "price": 16445,
                 "description": [
@@ -54,7 +54,7 @@
               },
               {
                 "name": "BMW C EVOLUTION",
-                "branch": "BMW",
+                "branch": "../images/BMW/bmw-5.jpg",
                 "image": "bmw-5",
                 "price": 13750,
                 "description": [
@@ -71,7 +71,7 @@
             [
               {
                 "name": "YZF-R6 QUICK-SHIFTER ON 2017",
-                "branch": "YAMAHA",
+                "branch": "../images/YAMAHA/yamaha-1.jpg",
                 "image": "yamaha-1",
                 "price": 20000,
                 "description": [
@@ -83,7 +83,7 @@
               },
               {
                 "name": "NIKEN Ride the Revolution",
-                "branch": "YAMAHA",
+                "branch": "../images/YAMAHA/yamaha-2.jpg",
                 "image": "yamaha-2",
                 "price": 50000,
                 "description": [
@@ -96,7 +96,7 @@
               },
               {
                 "name": "MT-10 SP Speed of Darkness",
-                "branch": "YAMAHA",
+                "branch": "../images/YAMAHA/yamaha-3.jpg",
                 "image": "yamaha-3",
                 "price": 15000,
                 "description": [
@@ -110,7 +110,7 @@
               },
               {
                 "name": "BOLT R‑SPEC",
-                "branch": "YAMAHA",
+                "branch": "../images/YAMAHA/yamaha-4.jpg",
                 "image": "yamaha-4",
                 "price": 8900,
                 "description": [
@@ -124,7 +124,7 @@
               },
               {
                 "name": "TRACER 900 GT",
-                "branch": "YAMAHA",
+                "branch": "../images/YAMAHA/yamaha-5.jpg",
                 "image": "yamaha-5",
                 "price": 30000,
                 "description": [
@@ -140,7 +140,7 @@
             [
               {
                 "name": "CBR1000RR",
-                "branch": "HONDA",
+                "branch": "../images/honda/honda-1.jpg",
                 "image": "honda-1",
                 "price": 16499,
                 "description": [
@@ -152,7 +152,7 @@
               },
               {
                 "name": "2018 Honda Grom",
-                "branch": "HONDA",
+                "branch": "../images/honda/honda-2.jpg",
                 "image": "honda-2",
                 "price": 3549,
                 "description": [
@@ -164,7 +164,7 @@
               },
               {
                 "name": "2017 Honda Gold Wing Audio Comfort Navi XM",
-                "branch": "HONDA",
+                "branch": "../images/honda/honda-3.jpg",
                 "image": "honda-3",
                 "price": 28979,
                 "description": [
@@ -175,7 +175,7 @@
               },
               {
                 "name": "2017 Honda Fury",
-                "branch": "HONDA",
+                "branch": "../images/honda/honda-4.jpg",
                 "image": "honda-4",
                 "price": 10299,
                 "description": [
@@ -187,7 +187,7 @@
               },
               {
                 "name": "2017 Honda Rebel ABS",
-                "branch": "HONDA",
+                "branch": "../images/honda/honda-5.jpg",
                 "image": "honda-5",
                 "price": 4699,
                 "description": [
@@ -203,7 +203,7 @@
             [
               {
                 "name": "Kawasaki NINJA H2",
-                "branch": "Kawasaki",
+                "branch": "../images/kawasaki/kawasaki-1.jpg",
                 "image": "kawasaki-1",
                 "price": 28000,
                 "description": [
@@ -215,7 +215,7 @@
               },
               {
                 "name": "NINJA ZX™-6R ABS KRT EDITION",
-                "branch": "Kawasaki",
+                "branch": "../images/kawasaki/kawasaki-2.jpg",
                 "image": "kawasaki-2",
                 "price": 11999,
                 "description": [
@@ -229,7 +229,7 @@
               },
               {
                 "name": "NINJA 300 ABS WINTER TEST EDITION",
-                "branch": "Kawasaki",
+                "branch": "../images/kawasaki/kawasaki-3.jpg",
                 "image": "kawasaki-3",
                 "price": 5599,
                 "description": [
@@ -243,7 +243,7 @@
               },
               {
                 "name": "KAWASAKI VULCAN 1700 VOYAGER® ABS",
-                "branch": "Kawasaki",
+                "branch": "../images/kawasaki/kawasaki-4.jpg",
                 "image": "kawasaki-4",
                 "price": 17499,
                 "description": [
@@ -255,7 +255,7 @@
               },
               {
                 "name": "KAWASAKI KLX®250 CAMO",
-                "branch": "Kawasaki",
+                "branch": "../images/kawasaki/kawasaki-5.jpg",
                 "image": "kawasaki-5",
                 "price": 5549,
                 "description": [
@@ -271,7 +271,7 @@
       [
         {
           "name": "GSX-R1000 ABS",
-          "branch": "Sukuki",
+          "branch": "../images/suzuki/suzuki-1.jpg",
           "image": "suzuki-1",
           "price": 23990,
           "description": [
@@ -282,7 +282,7 @@
         },
         {
           "name": "2017 HAYABUSA",
-          "branch": "Sukuki",
+          "branch": "../images/suzuki/suzuki-2.jpg",
           "image": "suzuki-2",
           "price": 20790,
           "description": [
@@ -294,7 +294,7 @@
         },
         {
           "name": "2017 GSX-R750",
-          "branch": "Sukuki",
+          "branch": "../images/suzuki/suzuki-3.jpg",
           "image": "suzuki-3",
           "price": 19990,
           "description": [
@@ -306,7 +306,7 @@
         },
         {
           "name": "2017 GSX-R600",
-          "branch": "Sukuki",
+          "branch": "../images/suzuki/suzuki-4.jpg",
           "image": "suzuki-4",
           "price": 16490,
           "description": [
@@ -318,7 +318,7 @@
         },
         {
           "name": "DR-Z70 SPECIAL CHRISTMAS PRICING",
-          "branch": "Sukuki",
+          "branch": "../images/suzuki/suzuki-5.jpg",
           "image": "suzuki-5",
           "price": 2090,
           "description": [
@@ -333,7 +333,7 @@
       [
         {
           "name": "2018 Harley-Davidson Softail Fat Bob",
-          "branch": "Harley Davidson",
+          "branch": "../images/harley/harley-1.jpg",
           "image": "harley-1",
           "price": 16999,
           "description": [
@@ -344,7 +344,7 @@
         },
         {
           "name": "2018 Harley-Davidson Softail Low Rider",
-          "branch": "Harley Davidson",
+          "branch": "../images/harley/harley-2.jpg",
           "image": "harley-2",
           "price": 14999,
           "description": [
@@ -355,7 +355,7 @@
         },
         {
           "name": "2018 Harley-Davidson Softail Fat Bob 114",
-          "branch": "Harley Davidson",
+          "branch": "../images/harley/harley-3.jpg",
           "image": "harley-3",
           "price": 18699,
           "description": [
@@ -366,7 +366,7 @@
         },
         {
           "name": "2018 Harley-Davidson Softail Street Bob",
-          "branch": "Harley Davidson",
+          "branch": "../images/harley/harley-4.jpg",
           "image": "harley-4",
           "price": 14499,
           "description": [
@@ -377,7 +377,7 @@
         },
         {
           "name": "2018 Harley-Davidson Softail Breakout 114",
-          "branch": "Harley Davidson",
+          "branch": "../images/harley/harley-5.jpg",
           "image": "harley-5",
           "price": 20299,
           "description": [

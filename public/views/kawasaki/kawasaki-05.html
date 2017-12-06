@@ -172,7 +172,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button ng-click="commentForm.$valid && createCommentKawasaki05()" class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment"><span class="glyphicon glyphicon-send"></span> Summit comment</button>
+                        <button ng-click="commentForm.$valid && createCommentKawasaki05()" class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment" ng-disabled="!commentForm.$valid"><span class="glyphicon glyphicon-send"></span> Summit comment</button>
                     </div>
                 </div>
                 <div class="alert alert-warning" role="alert" ng-show="commentForm.$dirty && !commentForm.$valid">
@@ -184,7 +184,7 @@
         </div>
     </div>
 
-    <div class="container"  ng-repeat="comment in commentKawasaki05">
+    <div class="container"  ng-repeat="comment in commentKawasaki05| orderBy:'-date'">
         <div class="row">
             <div class="col-sm-9">
                 <div class="panel panel-white post panel-shadow">
@@ -197,7 +197,7 @@
                                 <a href="#"><b>{{comment.author}}</b></a>
                                 made a post.
                             </div>
-                            <h6 class="text-muted time">1 minute ago</h6>
+                            <h6 class="text-muted time">{{comment.date|date:'MMM d, y h:mm:ss a'}}</h6>
                         </div>
                     </div>
                     <div class="post-description">

@@ -86,6 +86,7 @@ a:visited{
     line-height: 3;
     margin-left: 2px;
 }
+
 .listImage li:before{
     content: '';
     display: inline-block;
@@ -127,6 +128,23 @@ a:visited{
 @media screen and  (max-width: 991px) {
     .search3 {
         display: none!important;
+    }
+
+}
+@media screen and  (max-width: 760px) {
+    .search4 {
+        display: none!important;
+    }
+    .style-cart{
+        font-size: 12px;
+
+    }
+
+}
+@media screen and  (max-width: 330px) {
+
+    .smallCart{
+        margin-left: -20px;
     }
 
 }
