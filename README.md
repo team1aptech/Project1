@@ -3,7 +3,7 @@ create Website by:
 1. Doan Phuoc Trung
 2. Mai Van Khanh
 3. Le Phi Uan
-4. Phuc Trieu
+4. Tran Phuc Trieu
 
 # Install project 1:
 - Please install nodejs for your system, can see on https://nodejs.org/en/.
